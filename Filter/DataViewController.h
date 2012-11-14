@@ -1,5 +1,5 @@
 //
-//  AppDelegate.h
+//  DataViewController.h
 //  Filter
 //
 //  Created by Jakub Hladík on 14.11.12.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
-
-@property (strong, nonatomic) UIWindow *window;
+@interface DataViewController : UITableViewController
 
 @end

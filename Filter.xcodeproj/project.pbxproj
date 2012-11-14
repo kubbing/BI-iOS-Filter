@@ -19,8 +19,11 @@
 		1721F67516540808001020DA /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1721F67416540808001020DA /* Default-568h@2x.png */; };
 		1721F67816540808001020DA /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1721F67616540808001020DA /* MainStoryboard.storyboard */; };
 		1721F67B16540808001020DA /* Filter.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1721F67916540808001020DA /* Filter.xcdatamodeld */; };
-		1721F67E16540808001020DA /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1721F67D16540808001020DA /* MasterViewController.m */; };
-		1721F68116540808001020DA /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1721F68016540808001020DA /* DetailViewController.m */; };
+		1721F6891654083B001020DA /* DataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1721F6881654083B001020DA /* DataViewController.m */; };
+		1721F68C16540943001020DA /* Word.m in Sources */ = {isa = PBXBuildFile; fileRef = 1721F68B16540943001020DA /* Word.m */; };
+		1721F68F1654098A001020DA /* Word+Description.m in Sources */ = {isa = PBXBuildFile; fileRef = 1721F68E1654098A001020DA /* Word+Description.m */; };
+		1721F69116540AA0001020DA /* my_awesome_wordlist in Resources */ = {isa = PBXBuildFile; fileRef = 1721F69016540AA0001020DA /* my_awesome_wordlist */; };
+		1721F69416540AB7001020DA /* DataService.m in Sources */ = {isa = PBXBuildFile; fileRef = 1721F69316540AB7001020DA /* DataService.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,10 +43,16 @@
 		1721F67416540808001020DA /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		1721F67716540808001020DA /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		1721F67A16540808001020DA /* Filter.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Filter.xcdatamodel; sourceTree = "<group>"; };
-		1721F67C16540808001020DA /* MasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MasterViewController.h; sourceTree = "<group>"; };
-		1721F67D16540808001020DA /* MasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
-		1721F67F16540808001020DA /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
-		1721F68016540808001020DA /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		1721F6871654083B001020DA /* DataViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataViewController.h; sourceTree = "<group>"; };
+		1721F6881654083B001020DA /* DataViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataViewController.m; sourceTree = "<group>"; };
+		1721F68A16540943001020DA /* Word.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Word.h; sourceTree = "<group>"; };
+		1721F68B16540943001020DA /* Word.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Word.m; sourceTree = "<group>"; };
+		1721F68D1654098A001020DA /* Word+Description.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Word+Description.h"; sourceTree = "<group>"; };
+		1721F68E1654098A001020DA /* Word+Description.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Word+Description.m"; sourceTree = "<group>"; };
+		1721F69016540AA0001020DA /* my_awesome_wordlist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = my_awesome_wordlist; sourceTree = "<group>"; };
+		1721F69216540AB7001020DA /* DataService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataService.h; sourceTree = "<group>"; };
+		1721F69316540AB7001020DA /* DataService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataService.m; sourceTree = "<group>"; };
+		1721F695165418B5001020DA /* Filter 2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Filter 2.xcdatamodel"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,15 +101,20 @@
 		1721F66416540808001020DA /* Filter */ = {
 			isa = PBXGroup;
 			children = (
+				1721F69016540AA0001020DA /* my_awesome_wordlist */,
 				1721F66D16540808001020DA /* AppDelegate.h */,
 				1721F66E16540808001020DA /* AppDelegate.m */,
 				1721F67616540808001020DA /* MainStoryboard.storyboard */,
-				1721F67C16540808001020DA /* MasterViewController.h */,
-				1721F67D16540808001020DA /* MasterViewController.m */,
-				1721F67F16540808001020DA /* DetailViewController.h */,
-				1721F68016540808001020DA /* DetailViewController.m */,
+				1721F6871654083B001020DA /* DataViewController.h */,
+				1721F6881654083B001020DA /* DataViewController.m */,
 				1721F67916540808001020DA /* Filter.xcdatamodeld */,
+				1721F68A16540943001020DA /* Word.h */,
+				1721F68B16540943001020DA /* Word.m */,
 				1721F66516540808001020DA /* Supporting Files */,
+				1721F68D1654098A001020DA /* Word+Description.h */,
+				1721F68E1654098A001020DA /* Word+Description.m */,
+				1721F69216540AB7001020DA /* DataService.h */,
+				1721F69316540AB7001020DA /* DataService.m */,
 			);
 			path = Filter;
 			sourceTree = "<group>";
@@ -175,6 +189,7 @@
 				1721F67316540808001020DA /* Default@2x.png in Resources */,
 				1721F67516540808001020DA /* Default-568h@2x.png in Resources */,
 				1721F67816540808001020DA /* MainStoryboard.storyboard in Resources */,
+				1721F69116540AA0001020DA /* my_awesome_wordlist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -188,8 +203,10 @@
 				1721F66B16540808001020DA /* main.m in Sources */,
 				1721F66F16540808001020DA /* AppDelegate.m in Sources */,
 				1721F67B16540808001020DA /* Filter.xcdatamodeld in Sources */,
-				1721F67E16540808001020DA /* MasterViewController.m in Sources */,
-				1721F68116540808001020DA /* DetailViewController.m in Sources */,
+				1721F6891654083B001020DA /* DataViewController.m in Sources */,
+				1721F68C16540943001020DA /* Word.m in Sources */,
+				1721F68F1654098A001020DA /* Word+Description.m in Sources */,
+				1721F69416540AB7001020DA /* DataService.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -313,9 +330,10 @@
 		1721F67916540808001020DA /* Filter.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
+				1721F695165418B5001020DA /* Filter 2.xcdatamodel */,
 				1721F67A16540808001020DA /* Filter.xcdatamodel */,
 			);
-			currentVersion = 1721F67A16540808001020DA /* Filter.xcdatamodel */;
+			currentVersion = 1721F695165418B5001020DA /* Filter 2.xcdatamodel */;
 			path = Filter.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
